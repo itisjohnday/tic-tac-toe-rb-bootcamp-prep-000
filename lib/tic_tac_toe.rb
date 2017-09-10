@@ -124,7 +124,7 @@ def play(board)
     puts "Cat's Game!"
   end
   if win?(board)
-    puts "#{current_player(board)} wins!"
+    puts "#{winner(board)} wins!"
 end
 
 def turn_count(board)
