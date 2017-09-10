@@ -98,8 +98,8 @@ def position_taken?(board, index)
   board[index] != " "
 end
 
-def move(board, index, token)
-    board[index] = token
+def move(board, index)
+    board[index] = current_player(board)
 end
 
 def turn(board)
@@ -120,4 +120,18 @@ def play(board)
   9.times do
     turn(board)
   end
+end
+
+def turn_count(board)
+  count = 0
+  board.each do |position|
+    if (position != " ")
+      count += 1
+    end
+  end
+  return count
+end
+
+def current_player(board)
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end
