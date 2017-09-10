@@ -124,6 +124,8 @@ def play(board)
   if draw?(board)
     puts "Cat's Game!"
   end
+  if win?(board)
+    puts "#{current_player(board)} wins!"
 end
 
 def turn_count(board)
