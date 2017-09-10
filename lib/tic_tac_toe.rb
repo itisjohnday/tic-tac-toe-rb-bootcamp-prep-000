@@ -125,6 +125,7 @@ def play(board)
   end
   if win?(board)
     puts "#{winner(board)} wins!"
+  end
 end
 
 def turn_count(board)
