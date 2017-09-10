@@ -98,7 +98,7 @@ def position_taken?(board, index)
   board[index] != " "
 end
 
-def move(board, index, token = 'X')
+def move(board, index, token = current_player(board))
     board[index] = token
 end
 
