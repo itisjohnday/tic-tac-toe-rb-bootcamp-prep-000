@@ -120,6 +120,8 @@ def play(board)
   while !won?(board) && !draw?(board)
     turn(board)
   end
+  if draw?(board)
+    puts "Cat's Game!"
 end
 
 def turn_count(board)
