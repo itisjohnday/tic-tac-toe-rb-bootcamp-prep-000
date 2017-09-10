@@ -67,7 +67,6 @@ end
 
 def winner(board)
   if won?(board)
-    puts "#{current_player(board)} wins!"
     return board[won?(board)[0]]
   else
     nil
