@@ -117,6 +117,8 @@ end
 
 # Define your play method below
 def play(board)
+  puts "Welcome to Tic Tac Toe!"
+  display_board(board)
   while !won?(board) && !draw?(board)
     turn(board)
   end
